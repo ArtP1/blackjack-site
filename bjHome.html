@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Page Icon" href="img/blackjack-logo.png" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="css/blackjack.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div>
+            <a id="site-logo-container" href="bjHome.html">
+                <div>
+                    <img id="logo-img" src="img/blackjack-logo.png" alt="">
+                </div>
+                <div>
+                    <h2>BlackJack</h2>
+                </div>
+            </a>
+        </div>
+
+        <div>
+            <nav>
+                <ul class="nav-links">
+                     <li><a class="nav-option" href="bjBasics.html">Fundamentals</a></li>
+                     <li><a class="nav-option" href="bjhistory.html">History</a></li>
+                </ul> 
+             </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="introduction-container">
+            <div>
+                <h1>WELCOME</h1>
+            </div>
+            <div>
+                <p>Familiar with BlackJack?</p>
+            </div>
+            <br>
+            <div>
+                <p>Hit PLAY</p>
+            </div>
+            <div>
+                <div>
+                    <button onclick="ShowGame()">PLAY</button>
+                </div>
+            </div>
+            <div id="scroll-down">
+                <div>
+                    <div>
+                        <h2>SCROLL DOWN</h2>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-down-long"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="blackjack">
+            <div class="game-container">
+                <div class="table-container">
+                    <div>
+                        <img id="dealer-pfp" src="img/dealer-pfp.jfif" alt="">
+                        <h2>Dealer</h2>
+                        <span id="dealer-sum"></span>
+                        <div id="dealer-cards">
+                            <img id="hidden" src="img/cards/BACK.png" alt="">
+                            <img src="img/cards/10-C.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div id="player-pfps">
+                            <!-- <img id="player-pfp" src="#"> -->
+                        </div>
+                        <h2>You</h2>
+                        <div id="your-cards"></div>
+                        <span id="your-sum"></span>
+                    </div>
+                    <!-- <br> -->
+                    <div>
+                        <button id="hit">HIT</button>
+                        <button id="stay">STAY</button>
+                        <p id="results"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="javascript/blackjack.js"></script>
+</body>
+</html>

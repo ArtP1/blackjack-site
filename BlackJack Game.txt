@@ -1,0 +1,11 @@
+User can place a bet
+Dealer gives one card faced up to each player and one to themselves faced up
+Jacks, Kings, and Queens = 10
+Aces - A = 1 or 11
+if total is 21 you automatically win
+if user wants another card, they HIT. Otherwise say STAY
+once user's hand is greater than 21 you automatically loose, BUST
+if dealers hand is 16 or under, they take another card. Otherwise stay with hand.
+If dealer surpasses 21 they BUST, every player wins 2x their bet
+if the dealer doesn't BUST only the player who's highest hand wins 2x their bet, everyone else losses their bet
+If total is higher than 21, it is called a BUST  -> means you are out of the game

@@ -1,0 +1,191 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* ================================== HEADER SECTION ================================== */
+header {
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 1% 3%;
+    height: 100%;
+    position: relative; 
+    
+}
+
+    /* ----- Logo Modifications ----- */
+    #site-logo-container {
+        display: flex;
+        align-items: center;
+    }
+    #site-logo-container div {
+        padding-right: 10px;
+    }
+    #site-logo-container div h2 {
+        font-size: 40px;
+        color: white;
+    }
+    #logo-img {
+        width: 100px; /* Apparently Width controls the img size completely */
+        transition-duration: 1s;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(173deg) brightness(102%) contrast(101%);
+    }
+    #site-logo-container:hover  #logo-img{
+        transform: scale(1.02);
+        filter: invert(11%) sepia(83%) saturate(7384%) hue-rotate(353deg) brightness(97%) contrast(109%); /* Hex Code : #ff000d */
+    }
+
+    /* ----- Navigation Bar Modifications ----- */
+    .nav-links li {
+        display: inline-block;
+        padding: 0 20px;
+        position: relative;
+        list-style: none;
+
+    }
+    .nav-links li a {
+        transition-duration: 0.5s;
+        color:white;
+        padding: 8px;
+        border-radius: 20px;
+        display: block;
+        font-size: 22px;
+    }
+    .nav-links li .nav-option:hover {
+        background-color: #880808;
+    }
+
+/* ================================== MAIN SECTION ================================== */
+main {
+    padding-top: 200px;
+    height: 100vh;
+    display: block;
+    position: relative;
+    flex: 1;
+}
+
+    .introduction-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+    .introduction-container > div {
+        width: fit-content;
+    }
+    .introduction-container > div > h1 {
+        font-size: 200px;
+    }
+
+    .introduction-container > div > p {
+        font-size: 40px;
+    }
+    .introduction-container > div > div {
+        margin: 100px;
+        justify-content: center;
+    }
+    .introduction-container > div > div > button {
+        font-family: "Roboto", sans-serif;
+        height: 50px;
+        width: 160px;
+        font-weight: bold;
+        color: white;
+        background-color: #ff000d ;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    #scroll-down {
+        display: none;
+    }
+    #scroll-down > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #scroll-down > div > div > h2 {
+        font-size: 40px;
+    }
+    .fa-solid.fa-arrow-down-long {
+        padding-top: 100px;
+    }
+
+    /* ----- GAME CSS STARTS HERE ----- */
+    #blackjack {
+        /* display: none; */
+        align-items: center;
+    }
+    #game-container {
+        background-color: black;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #dealer-cards img {
+        height: 150px;
+        margin: 1px;
+    }
+    #your-cards img {
+        height: 150px;
+        margin: 1px;
+    }
+    #hit {
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+    }
+    #stay {
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .table-container {
+        text-align: center;
+        height: 105%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin: px; */
+        /* height: fit-content; */
+        /* border-radius: 50% / 0 0 100% 100%; */
+        
+        /* padding-bottom: 50px; */
+        /* padding-top: 50px; */
+        padding: 15px;
+        /* width: fit-content; */
+        border-color: brown;
+        flex-grow: 100;
+        background-color: #327932;
+    }
+    .table-container > div{
+        background-color: red;
+        margin: 10px;
+    }
+    .table-container > h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    #dealer-pfp {
+        border-radius: 50%;
+        height: 140px;
+        width: 140px;
+    }
+    #dealer-cards {
+        padding-bottom: 100px;
+    }
+
+ 
