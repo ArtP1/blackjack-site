@@ -25,8 +25,7 @@
         <div>
             <nav>
                 <ul class="nav-links">
-                     <li><a class="nav-option" href="bjBasics.html">Fundamentals</a></li>
-                     <li><a class="nav-option" href="bjhistory.html">History</a></li>
+                     <li><a class="nav-option" href="tutorial.html">Tutorial</a></li>
                 </ul> 
              </nav>
         </div>
@@ -62,34 +61,40 @@
             </div>
         </div>
     
-        <div id="blackjack">
-            <div class="game-container">
-                <div class="table-container">
-                    <div>
-                        <img id="dealer-pfp" src="img/dealer-pfp.jfif" alt="">
-                        <h2>Dealer</h2>
-                        <span id="dealer-sum"></span>
-                        <div id="dealer-cards">
-                            <img id="hidden" src="img/cards/BACK.png" alt="">
-                            <img src="img/cards/10-C.png" alt="">
+        <div id="display-game">
+                <div class="blackjack-container">
+                    <div class="table-container">
+                        <div>
+                            <img id="dealer-pfp" src="img/dealer-pfp.jfif" alt="">
+                            <h2>Dealer</h2>
+                            <span id="dealer-sum"></span>
+                            <div id="dealer-cards">
+                                <img id="hidden" src="img/cards/BACK.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div id="player-pfps">
-                            <!-- <img id="player-pfp" src="#"> -->
+                        <div>
+                            <div id="player-pfps">
+                                <!-- <img id="player-pfp" src="#"> -->
+                            </div>
+                            <h2>You</h2>
+                            <div id="your-cards"></div>
+                            <span id="your-sum"></span>
                         </div>
-                        <h2>You</h2>
-                        <div id="your-cards"></div>
-                        <span id="your-sum"></span>
-                    </div>
-                    <!-- <br> -->
-                    <div>
-                        <button id="hit">HIT</button>
-                        <button id="stay">STAY</button>
-                        <p id="results"></p>
+                        <div class="chip-stack">
+                            <div>$10</div>
+                            <div>$25</div>
+                            <div>$50</div>
+                            <div>$100</div>
+                        </div>
+                        <div class="buttons">
+                            <button id="hit">Hit</button>
+                            <button id="stand">Stand</button>
+                            <button id="double-down">Double Down</button>
+                            <button id="split">Split</button>
+                            <button id="deal">Deal</button>
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>
     </main>
 

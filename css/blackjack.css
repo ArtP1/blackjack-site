@@ -58,7 +58,8 @@ header {
         padding: 8px;
         border-radius: 20px;
         display: block;
-        font-size: 22px;
+        font-size: 30px;
+        font-weight: bold;
     }
     .nav-links li .nav-option:hover {
         background-color: #880808;
@@ -68,7 +69,8 @@ header {
 main {
     padding-top: 200px;
     height: 100vh;
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
     flex: 1;
 }
@@ -78,6 +80,7 @@ main {
         flex-direction: column;
         font-size: 50px;
         align-items: center;
+        /* overflow: hidden; */
         justify-content: center;
         height: 90vh;
     }
@@ -108,6 +111,7 @@ main {
     }
     #scroll-down {
         display: none;
+        padding-bottom: 500px;
     }
     #scroll-down > div {
         display: flex;
@@ -122,58 +126,30 @@ main {
     }
 
     /* ----- GAME CSS STARTS HERE ----- */
-    #blackjack {
-        /* display: none; */
+    #display-game {
+        display: none;
+        background-color: white;
+    }
+    .blackjack-container {
         align-items: center;
-    }
-    #game-container {
-        background-color: black;
-        width: 100vw;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    #dealer-cards img {
-        height: 150px;
-        margin: 1px;
-    }
-    #your-cards img {
-        height: 150px;
-        margin: 1px;
-    }
-    #hit {
-        width: 100px;
-        height: 50px;
-        font-size: 20px;
-    }
-    #stay {
-        width: 100px;
-        height: 50px;
-        font-size: 20px;
-    }
-    .table-container {
-        text-align: center;
-        height: 105%;
-        width: 50%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* margin: px; */
-        /* height: fit-content; */
-        /* border-radius: 50% / 0 0 100% 100%; */
-        
-        /* padding-bottom: 50px; */
-        /* padding-top: 50px; */
-        padding: 15px;
-        /* width: fit-content; */
-        border-color: brown;
-        flex-grow: 100;
-        background-color: #327932;
     }
-    .table-container > div{
-        background-color: red;
-        margin: 10px;
+    .table-container {
+        position: relative;
+        width: 65%;
+        height: fit-content;
+        background-color: green;
+        border-radius: 0 0 50% 50%;
+        overflow: hidden;
+        align-items: center;
+        box-shadow: 0 0 20px black;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    .table-container > div {
+        text-align: center;
+        /* margin: 5px; */
     }
     .table-container > h2{
         font-size: 30px;
@@ -185,7 +161,53 @@ main {
         width: 140px;
     }
     #dealer-cards {
-        padding-bottom: 100px;
+        padding-bottom: 80px;
     }
+    #dealer-cards img {
+        height: 180px;
+        margin: 1px;
+    }
+    #your-cards img {
+        height: 180px;
+        margin: 1px;
+    }
+
+    .chip-stack {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .chip-stack > div {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        margin: 0 10px;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: #f5d16b;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    button {
+        background-color: #d1e3f3;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin-right: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+      
+    button:hover {
+        background-color: #f5d16b;
+        color: #fff;
+      }
 
  

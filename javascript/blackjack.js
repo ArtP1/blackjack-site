@@ -11,7 +11,7 @@ var canHit = true;
 
 
 function ShowGame() {
-    var Test = document.getElementById("blackjack");
+    var Test = document.getElementById("display-game");
     var Signal = document.getElementById("scroll-down");
     Test.style.display = "block";
     Signal.style.display = "block";
@@ -21,12 +21,8 @@ window.onload = function() {
     buildDeck();
     shuffleDeck();
     startGame();
-    // profilePic();
 }
 
-// function profilePic() {
-
-// }
 
 function buildDeck() {
     let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
@@ -38,7 +34,7 @@ function buildDeck() {
             deck.push(values[j] + "-" + types[i]); //A-C -> K-C, A-D -> K-D
         }
     }
-    // console.log(deck);
+    console.log(deck);
 }
 
 function shuffleDeck() {
@@ -89,7 +85,7 @@ function startGame() {
 
     console.log(yourSum);
     document.getElementById("hit").addEventListener("click", hit);
-    document.getElementById("stay").addEventListener("click", stay);
+    document.getElementById("stand").addEventListener("click", stand);
 
 }
 
@@ -111,7 +107,7 @@ function hit() {
 
 }
 
-function stay() {
+function stand() {
     dealerSum = reduceAce(dealerSum, dealerAceCount);
     yourSum = reduceAce(yourSum, yourAceCount);
 
